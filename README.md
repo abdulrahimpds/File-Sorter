@@ -19,6 +19,7 @@ This program requires the following Python packages:
 - `PIL` (Pillow)
 - `pystray`
 - `watchdog`
+- `pywin32`
 - `winshell`
 
 ## Disclaimer
