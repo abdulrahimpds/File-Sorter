@@ -22,5 +22,4 @@ This program requires the following Python packages:
 - `winshell`
 
 ## Disclaimer
-
 This program moves files in your Downloads directory. Make backups before running the program.
