@@ -116,9 +116,21 @@ def start_tray_icon():
     # Run the system tray icon
     icon.run()
 
+def failsafe_restart(func, *args, **kwargs):
+    while True:
+        try:
+            func(*args, **kwargs)
+            time.sleep(1)
+        except Exception as e:
+            print(f"An error occurred: {str(e)}")
+            print("Restarting the program...")
+            # If you want to limit the number of restarts, you can add a counter here.
+            continue
+        break
+
 if __name__ == "__main__":
     # Start main function in a separate thread
-    main_thread = Thread(target=main_func)
+    main_thread = Thread(target=failsafe_restart, args=(main_func,))
     main_thread.start()
 
     # Start the system tray icon in the main thread
