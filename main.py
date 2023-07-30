@@ -50,30 +50,42 @@ def sort_file(file_path):
     filename = os.path.basename(file_path)
     _, extension = os.path.splitext(filename)
     extension = extension.lower()
-    # Check if the file extension exists in the mapping
+
     if extension in extension_to_folder:
         # Get the destination folder for the file
         folder_name = extension_to_folder[extension]
         destination_folder = os.path.join(download_directory, folder_name)
 
         # Create the destination folder if it doesn't exist
-        if not os.path.exists(destination_folder):
-            os.makedirs(destination_folder)
+        os.makedirs(destination_folder, exist_ok=True)
 
-        # Move the file to the destination folder
+        # Prepare the destination file path
         destination_file = os.path.join(destination_folder, filename)
-        # Add a delay before moving the file
-        time.sleep(1)
-        try:
-            shutil.move(file_path, destination_file)
-        except Exception as e:
-            print(f"Error moving file '{filename}': {str(e)}")
+
+        while os.path.exists(file_path):  # While the source file exists
+            try:
+                shutil.move(file_path, destination_file)
+                break
+            except Exception as e:
+                if 'being used by another process' in str(e):
+                    print(f"File '{filename}' is in use. Retrying...")
+                    time.sleep(2)  # wait before trying again
+                else:
+                    print(f"Stopped trying to move file '{filename}' due to error: {str(e)}")
+                    break  # if the error is caused by something else, stop trying to move the file
 
 class MyHandler(FileSystemEventHandler):
     def on_created(self, event):
         # Only process new files
         if not event.is_directory:
+            time.sleep(0.3)
             sort_file(event.src_path)
+
+    def on_moved(self, event):
+        # Only process new files
+        if not event.is_directory:
+            time.sleep(0.3)
+            sort_file(event.dest_path)
 
 def main_func():
     # Perform initial sorting
