@@ -17,6 +17,7 @@ extension_to_folder = {
     
     # Programs
     '.exe': 'Programs', '.msi': 'Programs', '.dmg': 'Programs', '.pkg': 'Programs',
+    '.apk': 'Programs',
     
     # Scripts
     '.bat': 'Scripts', '.sh': 'Scripts', '.py': 'Scripts', '.js': 'Scripts', 
@@ -111,7 +112,7 @@ def main_func():
 
 def start_tray_icon():
     # Load an image for the icon (this should be 64x64 pixels for best compatibility)
-    tray_icon = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icon.ico')
+    tray_icon = os.path.join(os.path.dirname(os.path.abspath(__file__)), '128.ico')
     image = Image.open(tray_icon)
 
     # Create a function that will be called when the user clicks on the icon
