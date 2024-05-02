@@ -1,6 +1,6 @@
 # Privacy Policy for File Sorter
 
-# Last updated: 05/01/2024
+# Last updated: 01/05/2024
 
 ## Introduction
 File Sorter is a Chrome extension developed to enhance user experience by organizing downloaded files into user-specified folders based on their file type. This Privacy Policy outlines our policies and procedures on the collection, use, and disclosure of your information when you use File Sorter and informs you about your privacy rights and how the law protects you.
