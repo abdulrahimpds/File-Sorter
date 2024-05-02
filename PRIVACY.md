@@ -14,7 +14,7 @@ File Sorter requires certain permissions to function properly:
 - Downloads: Allows the extension to access and manage your downloads, which is essential for redirecting files to specified folders.
 
 ## Use of Your Personal Data
-The company does not collect personal data through File Sorter, and hence no use of personal data occurs. The extension uses only the data related to downloaded files momentarily to perform the sorting function as specified by the user.
+The developer does not collect personal data through File Sorter, and hence no use of personal data occurs. The extension uses only the data related to downloaded files momentarily to perform the sorting function as specified by the user.
 
 ## Retention of Your Personal Data
 Since no personal data is collected, there is no retention of personal data by File Sorter.
