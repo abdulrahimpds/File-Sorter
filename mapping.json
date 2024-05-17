@@ -1,0 +1,31 @@
+{
+    ".pdf": "Documents", ".doc": "Documents", ".docx": "Documents", ".xls": "Documents",
+    ".xlsx": "Documents", ".ppt": "Documents", ".pptx": "Documents", ".txt": "Documents",
+    ".csv": "Documents", ".rtf": "Documents", ".odt": "Documents", ".ods": "Documents",
+    ".odp": "Documents", ".epub": "Documents", ".log": "Documents", ".md": "Documents",
+    ".tex": "Documents", ".wpd": "Documents",
+
+    ".exe": "Programs", ".msi": "Programs", ".dmg": "Programs", ".pkg": "Programs",
+    ".apk": "Programs", ".deb": "Programs", ".rpm": "Programs",
+
+    ".bat": "Scripts", ".sh": "Scripts", ".py": "Scripts", ".js": "Scripts",
+    ".html": "Scripts", ".css": "Scripts", ".php": "Scripts", ".java": "Scripts",
+    ".cpp": "Scripts", ".c": "Scripts", ".rb": "Scripts", ".pl": "Scripts",
+    ".swift": "Scripts", ".go": "Scripts",
+
+    ".mp4": "Video", ".avi": "Video", ".mkv": "Video", ".mov": "Video",
+    ".wmv": "Video", ".flv": "Video", ".m4v": "Video", ".mpg": "Video", ".webm": "Video",
+    ".mpeg": "Video", ".3gp": "Video", ".3g2": "Video", ".f4v": "Video", ".ts": "Video",
+
+    ".jpg": "Images", ".jpeg": "Images", ".png": "Images", ".gif": "Images",
+    ".bmp": "Images", ".svg": "Images", ".tiff": "Images", ".ico": "Images",
+    ".jfif": "Images", ".webp": "Images", ".psd": "Images", ".ai": "Images",
+
+    ".mp3": "Music", ".wav": "Music", ".ogg": "Music", ".flac": "Music",
+    ".aac": "Music", ".m4a": "Music", ".raw": "Music", ".wma": "Music", ".midi": "Music",
+    ".alac": "Music",
+
+    ".zip": "Compressed", ".rar": "Compressed", ".7z": "Compressed", ".iso": "Compressed",
+    ".gz": "Compressed", ".tar": "Compressed", ".bz2": "Compressed", ".xz": "Compressed",
+    ".tar.gz": "Compressed", ".tgz": "Compressed", ".cab": "Compressed", ".arj": "Compressed"
+}
