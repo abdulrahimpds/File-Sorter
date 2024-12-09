@@ -11,7 +11,7 @@
     ".bat": "Scripts", ".sh": "Scripts", ".py": "Scripts", ".js": "Scripts",
     ".html": "Scripts", ".css": "Scripts", ".php": "Scripts", ".java": "Scripts",
     ".cpp": "Scripts", ".c": "Scripts", ".rb": "Scripts", ".pl": "Scripts",
-    ".swift": "Scripts", ".go": "Scripts",
+    ".swift": "Scripts", ".go": "Scripts", ".ipynb": "Scripts",
 
     ".mp4": "Video", ".avi": "Video", ".mkv": "Video", ".mov": "Video",
     ".wmv": "Video", ".flv": "Video", ".m4v": "Video", ".mpg": "Video", ".webm": "Video",
