@@ -6,7 +6,7 @@
     ".tex": "Documents", ".wpd": "Documents",
 
     ".exe": "Programs", ".msi": "Programs", ".dmg": "Programs", ".pkg": "Programs",
-    ".apk": "Programs", ".deb": "Programs", ".rpm": "Programs",
+    ".apk": "Programs", ".deb": "Programs", ".rpm": "Programs", ".jar": "Programs",
 
     ".bat": "Scripts", ".sh": "Scripts", ".py": "Scripts", ".js": "Scripts",
     ".html": "Scripts", ".css": "Scripts", ".php": "Scripts", ".java": "Scripts",
